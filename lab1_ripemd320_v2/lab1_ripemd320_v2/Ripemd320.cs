@@ -503,11 +503,11 @@ namespace lab1_ripemd320
 
         public override string ToString()
         {
-            StringBuilder sb = new StringBuilder(90);
+            StringBuilder sb = new StringBuilder(120);
             foreach (var item in H)
             {
                 sb.Append(item);
-                sb.Append(" ");
+                sb.Append(" | ");
             }
             return sb.ToString();
         }

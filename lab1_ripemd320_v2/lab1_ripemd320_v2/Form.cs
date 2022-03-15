@@ -51,7 +51,7 @@ namespace lab1_ripemd320_v2
 
             str = readFileText.Text;
             if (string.IsNullOrEmpty(str))
-                str = "defalt.txt";
+                str = "default.txt";
             try
             {
                 using(StreamReader reader=new StreamReader(str))
@@ -69,7 +69,7 @@ namespace lab1_ripemd320_v2
         {
             string str = writeFileText.Text;
             if (string.IsNullOrEmpty(str))
-                str = "defaltWrite.txt";
+                str = "defaultWrite.txt";
             try
             {
                 using (StreamWriter writer=new StreamWriter(str))
@@ -105,7 +105,7 @@ namespace lab1_ripemd320_v2
                 }
                 chart1.Series[0].ChartType = SeriesChartType.Line;
                 chart1.Legends.Clear();
-                hashText.Text += "\nХэш-код текста с измененным битом "+bitText.Text+ Environment.NewLine + ripemd2.ToString();
+                hashText.Text += Environment.NewLine + "Хэш-код текста с измененным битом " +bitText.Text+ Environment.NewLine + ripemd2.ToString();
             }catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);

@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label1 = new System.Windows.Forms.Label();
             this.text = new System.Windows.Forms.TextBox();
             this.readFileText = new System.Windows.Forms.TextBox();
@@ -66,7 +66,7 @@
             this.text.Multiline = true;
             this.text.Name = "text";
             this.text.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.text.Size = new System.Drawing.Size(607, 325);
+            this.text.Size = new System.Drawing.Size(664, 325);
             this.text.TabIndex = 3;
             // 
             // readFileText
@@ -74,11 +74,11 @@
             this.readFileText.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.readFileText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.readFileText.Location = new System.Drawing.Point(643, 36);
+            this.readFileText.Location = new System.Drawing.Point(697, 36);
             this.readFileText.Multiline = true;
             this.readFileText.Name = "readFileText";
             this.readFileText.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.readFileText.Size = new System.Drawing.Size(529, 31);
+            this.readFileText.Size = new System.Drawing.Size(475, 31);
             this.readFileText.TabIndex = 1;
             // 
             // label2
@@ -86,7 +86,7 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(639, 9);
+            this.label2.Location = new System.Drawing.Point(701, 11);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(310, 22);
             this.label2.TabIndex = 11;
@@ -97,7 +97,7 @@
             this.hashButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.hashButton.Location = new System.Drawing.Point(12, 367);
             this.hashButton.Name = "hashButton";
-            this.hashButton.Size = new System.Drawing.Size(607, 23);
+            this.hashButton.Size = new System.Drawing.Size(664, 23);
             this.hashButton.TabIndex = 4;
             this.hashButton.Text = "Хэшировать";
             this.hashButton.UseVisualStyleBackColor = true;
@@ -108,9 +108,9 @@
             this.readFileButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.readFileButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.readFileButton.Location = new System.Drawing.Point(643, 73);
+            this.readFileButton.Location = new System.Drawing.Point(697, 73);
             this.readFileButton.Name = "readFileButton";
-            this.readFileButton.Size = new System.Drawing.Size(529, 23);
+            this.readFileButton.Size = new System.Drawing.Size(475, 23);
             this.readFileButton.TabIndex = 2;
             this.readFileButton.Text = "Читать файл";
             this.readFileButton.UseVisualStyleBackColor = true;
@@ -125,7 +125,7 @@
             this.hashText.Multiline = true;
             this.hashText.Name = "hashText";
             this.hashText.ReadOnly = true;
-            this.hashText.Size = new System.Drawing.Size(607, 43);
+            this.hashText.Size = new System.Drawing.Size(664, 43);
             this.hashText.TabIndex = 6;
             // 
             // label3
@@ -146,7 +146,7 @@
             this.writeFileText.Multiline = true;
             this.writeFileText.Name = "writeFileText";
             this.writeFileText.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.writeFileText.Size = new System.Drawing.Size(607, 25);
+            this.writeFileText.Size = new System.Drawing.Size(664, 25);
             this.writeFileText.TabIndex = 5;
             // 
             // label4
@@ -166,7 +166,7 @@
             this.writeFileButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.writeFileButton.Location = new System.Drawing.Point(12, 551);
             this.writeFileButton.Name = "writeFileButton";
-            this.writeFileButton.Size = new System.Drawing.Size(607, 23);
+            this.writeFileButton.Size = new System.Drawing.Size(664, 23);
             this.writeFileButton.TabIndex = 6;
             this.writeFileButton.Text = "Запись в файл";
             this.writeFileButton.UseVisualStyleBackColor = true;
@@ -177,24 +177,24 @@
             this.chart1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea6.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea6);
-            legend6.Name = "Legend1";
-            this.chart1.Legends.Add(legend6);
-            this.chart1.Location = new System.Drawing.Point(643, 205);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(697, 205);
             this.chart1.Name = "chart1";
-            series6.ChartArea = "ChartArea1";
-            series6.Legend = "Legend1";
-            series6.Name = "Series1";
-            this.chart1.Series.Add(series6);
-            this.chart1.Size = new System.Drawing.Size(529, 394);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(475, 394);
             this.chart1.TabIndex = 11;
             this.chart1.Text = "chart";
             // 
             // bitText
             // 
             this.bitText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bitText.Location = new System.Drawing.Point(643, 161);
+            this.bitText.Location = new System.Drawing.Point(697, 161);
             this.bitText.Multiline = true;
             this.bitText.Name = "bitText";
             this.bitText.Size = new System.Drawing.Size(48, 27);
@@ -202,7 +202,7 @@
             // 
             // paintButton
             // 
-            this.paintButton.Location = new System.Drawing.Point(697, 161);
+            this.paintButton.Location = new System.Drawing.Point(759, 161);
             this.paintButton.Name = "paintButton";
             this.paintButton.Size = new System.Drawing.Size(190, 27);
             this.paintButton.TabIndex = 8;
@@ -214,7 +214,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(639, 136);
+            this.label5.Location = new System.Drawing.Point(701, 136);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(248, 22);
             this.label5.TabIndex = 11;
