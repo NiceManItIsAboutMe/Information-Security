@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RGZ_Test", "RGZ_Test\RGZ_Test.csproj", "{BE205C0F-7780-4A25-B3E3-95BEFC619BFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE205C0F-7780-4A25-B3E3-95BEFC619BFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE205C0F-7780-4A25-B3E3-95BEFC619BFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE205C0F-7780-4A25-B3E3-95BEFC619BFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE205C0F-7780-4A25-B3E3-95BEFC619BFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C021D924-DA87-4638-B5AC-FFCA94254868}
+	EndGlobalSection
+EndGlobal

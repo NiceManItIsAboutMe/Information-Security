@@ -1,0 +1,41 @@
+﻿<Page x:Class="IB_4.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:IB_4"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="1000"
+      Title="Page" Background="Beige">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"></ColumnDefinition>
+            <ColumnDefinition Width="500"></ColumnDefinition>
+            <ColumnDefinition Width="250"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="125"></RowDefinition>
+            <RowDefinition Height="300"></RowDefinition>
+            <RowDefinition Height="125"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="PersonalTextBlock" TextWrapping="Wrap" Text="Здравствуйте! " Grid.Column="1" Grid.Row="0" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+
+        <Menu Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" VerticalAlignment="Top" Height="31">
+            <MenuItem Header="Действия" FontSize="20" x:Name="ActionsButton">
+                <MenuItem Header="Личные данные" FontSize="20" x:Name="PersonalDataButton" Click="PersonalDataButton_Click"></MenuItem>
+                <MenuItem Header="Выход" FontSize="20" x:Name="ExitButton" Click="ExitButton_Click"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="О программе" FontSize="20" x:Name="InfoProgrammButton" Click="InfoProgrammButton_Click"></MenuItem>
+        </Menu>
+
+        <DataGrid ItemsSource="{Binding Table, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Window}}"
+            AutoGenerateColumns="True" Grid.Row="1" Grid.Column="1" x:Name="BdGrid"/>
+
+        <Button Grid.Column="1" Grid.Row="2" Content="Получить базу данных" x:Name="GetBdButton" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="25" Margin="0,25,0,0" Click="GetBdButton_Click"></Button>
+        <Button Grid.Column="1" Grid.Row="2" Content="Модифицировать базу данных" x:Name="ModificateBdButton" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="25" Margin="0,80,0,0" Click="ModificateBdButton_Click"></Button>
+
+    </Grid>
+</Page>
