@@ -49,6 +49,7 @@ namespace RGZ_Test
         {
             return Next(new Random().Next(countBitsMin, countBitsMax));
         }
+        
         /// <summary>
         /// Возвращает простое число размером countBits бит
         /// </summary>

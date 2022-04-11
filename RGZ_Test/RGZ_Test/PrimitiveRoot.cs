@@ -20,9 +20,14 @@ namespace RGZ_Test
 
             //i=a
             BigInteger i = 2;
-          
+            BigInteger count;
+            if (num > long.MaxValue)
+                count = EulerF(EulerF(num - 1));
+            else
+                count = long.MaxValue;
+
             //пока не найдены количество корней указанных пользователем, либо всех возможных корней
-            while (result.Count != countRoots && result.Count!=EulerF(EulerF(num-1)))
+            while (result.Count != countRoots && result.Count!=count)
             {
                 foreach (var item in fact)
                 {
@@ -122,7 +127,7 @@ namespace RGZ_Test
             if (num == 4)
                 return 2;
             if (num > long.MaxValue)
-                x = random.NextInt64(1, long.MaxValue);
+                x = LargePrimeGenertor.NextRandom(1, (int)num.GetBitLength() - 1);
             else
                 x = random.NextInt64(1, (long)(num - 2));
             BigInteger y = 1;
