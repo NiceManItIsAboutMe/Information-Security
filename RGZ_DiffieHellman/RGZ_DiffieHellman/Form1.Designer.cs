@@ -32,7 +32,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.countBitsBox = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.primeNumber10Box = new System.Windows.Forms.TextBox();
             this.primeNumber2Box = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -76,6 +75,7 @@
             this.label20 = new System.Windows.Forms.Label();
             this.KbBox = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // rabinMillerBox
@@ -111,15 +111,6 @@
             this.countBitsBox.Name = "countBitsBox";
             this.countBitsBox.Size = new System.Drawing.Size(360, 25);
             this.countBitsBox.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(12, 145);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(363, 25);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Простое число в 10 системе";
             // 
             // primeNumber10Box
             // 
@@ -530,6 +521,15 @@
             this.label21.TabIndex = 48;
             this.label21.Text = "Kb";
             // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(12, 145);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(363, 25);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Простое число в 10 системе";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -597,7 +597,6 @@
         private Label label1;
         private Label label2;
         private TextBox countBitsBox;
-        private Label label3;
         private TextBox primeNumber10Box;
         private TextBox primeNumber2Box;
         private Label label4;
@@ -641,5 +640,6 @@
         private Label label20;
         private TextBox KbBox;
         private Label label21;
+        private Label label3;
     }
 }
