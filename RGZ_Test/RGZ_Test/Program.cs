@@ -4,7 +4,7 @@ using System.Numerics;
 using System.Text;
 
 
-DiffieHellmanScheme dhs = new DiffieHellmanScheme(42);
+DiffieHellmanScheme dhs = new DiffieHellmanScheme(65);
 Console.WriteLine(dhs.ToString());
 
 //Console.WriteLine(LargePrimeGenertor.Next(150).ToString());

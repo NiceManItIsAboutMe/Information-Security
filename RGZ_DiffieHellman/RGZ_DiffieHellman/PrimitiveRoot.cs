@@ -26,10 +26,8 @@ namespace RGZ_Test
             //i=a
             BigInteger i = 2;
             BigInteger count;
-            if (num > long.MaxValue)
-                count = EulerF(EulerF(num - 1));
-            else
-                count = long.MaxValue;
+            
+            count = EulerF(EulerF(num - 1));
 
             //пока не найдены количество корней указанных пользователем, либо всех возможных корней
             while (result.Count != countRoots && result.Count!=count)

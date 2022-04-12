@@ -67,17 +67,30 @@ namespace RGZ_Test
             Kb = BigInteger.ModPow(Ya, Xb, N);
 
         }
+        public DiffieHellmanScheme(BigInteger N, BigInteger Xa, BigInteger Xb,BigInteger G)
+        {
+            this.N = N;
+
+            this.G = G;
+            this.Xa = Xa;
+            this.Xb = Xb;
+            Ya = BigInteger.ModPow(G, Xa, N);
+            Yb = BigInteger.ModPow(G, Xb, N);
+            Ka = BigInteger.ModPow(Yb, Xa, N);
+            Kb = BigInteger.ModPow(Ya, Xb, N);
+
+        }
 
         public override string ToString()
         {
 
-            return "n=" + N + "\t" + LargePrimeGenertor.GetBinary(N)
-                + "\ng=" + G + "\t" + LargePrimeGenertor.GetBinary(G)
-                + "\nXa=" + Xa + "\t" + LargePrimeGenertor.GetBinary(Xa)
-                + "\nXb=" + Xb + "\t" + LargePrimeGenertor.GetBinary(Xb)
-                + "\nYa=" + Ya + "\t" + LargePrimeGenertor.GetBinary(Ya)
-                + "\nYb=" + Yb + "\t" + LargePrimeGenertor.GetBinary(Yb)
-                + "\nKa=" + Ka + "\t" + LargePrimeGenertor.GetBinary(Ka)
+            return "n=" + LargePrimeGenertor.GetBinary(N) + Environment.NewLine
+                + "\ng=" + G + "\t" + LargePrimeGenertor.GetBinary(G) + Environment.NewLine
+                + "\nXa=" + LargePrimeGenertor.GetBinary(Xa) + Environment.NewLine
+                + "\nXb=" + LargePrimeGenertor.GetBinary(Xb) + Environment.NewLine
+                + "\nYa=" + Ya + "\t" + LargePrimeGenertor.GetBinary(Ya) + Environment.NewLine
+                + "\nYb=" + Yb + "\t" + LargePrimeGenertor.GetBinary(Yb) + Environment.NewLine
+                + "\nKa=" + Ka + "\t" + LargePrimeGenertor.GetBinary(Ka) + Environment.NewLine
                 + "\nKb=" + Kb + "\t" + LargePrimeGenertor.GetBinary(Kb);
         }
     }
